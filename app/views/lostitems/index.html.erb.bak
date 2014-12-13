@@ -4,10 +4,6 @@ h1{
 text-align:center;
 }
 
-body{
-background-image:url("assets/2.jpg");
-background-repeat: no-repeat;
-}
 
 </style>
 <h1>List of Lost Items</h1>

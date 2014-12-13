@@ -6,11 +6,12 @@ h1{
 text-align:center;
 }
 
-
 body{
-background-image:url("assets/4.jpg");
-background-repeat: no-repeat;
+
+background-image:url("assest/4.jpg");
+
 }
+
 
 </style>
 
