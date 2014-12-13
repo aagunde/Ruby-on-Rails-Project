@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lostitem.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @lostitem.color %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @lostitem.brand %>
+</p>
+
+<p>
+  <strong>Place where lost:</strong>
+  <%= @lostitem.place_where_lost %>
+</p>
+
+<%= link_to 'Edit', edit_lostitem_path(@lostitem) %> |
+<%= link_to 'Back', lostitems_path %>

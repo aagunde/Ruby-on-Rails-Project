@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @founditem.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @founditem.color %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @founditem.brand %>
+</p>
+
+<p>
+  <strong>Place where found:</strong>
+  <%= @founditem.place_where_found %>
+</p>
+
+<%= link_to 'Edit', edit_founditem_path(@founditem) %> |
+<%= link_to 'Back', founditems_path %>

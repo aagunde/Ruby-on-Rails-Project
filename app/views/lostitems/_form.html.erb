@@ -1,0 +1,33 @@
+<%= form_for(@lostitem) do |f| %>
+  <% if @lostitem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lostitem.errors.count, "error") %> prohibited this lostitem from being saved:</h2>
+
+      <ul>
+      <% @lostitem.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.text_area :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :place_where_lost %><br>
+    <%= f.text_area :place_where_lost %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

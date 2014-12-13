@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  color: MyString
+  brand: MyText
+  place_where_found: MyText
+
+two:
+  name: MyString
+  color: MyString
+  brand: MyText
+  place_where_found: MyText
