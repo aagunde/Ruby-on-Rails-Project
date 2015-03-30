@@ -13,24 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150328152350) do
 
-  create_table "organisers", force: true do |t|
-    t.string   "name"
-    t.string   "college"
-    t.text     "event_title"
-    t.text     "event_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "participants", force: true do |t|
-    t.string   "name"
-    t.string   "college"
-    t.text     "interested_event"
-    t.text     "year_of_engg"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.string   "name"
     t.integer  "age"
