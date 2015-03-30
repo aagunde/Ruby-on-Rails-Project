@@ -20,6 +20,6 @@ test:
 
 production:
   adapter: postgresql
-  database: lost_and_found_production
+  database: eventino_production
   pool: 5
   timeout: 5000

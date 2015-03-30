@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-LostAndFound::Application.config.secret_key_base = '2d7b766f86801be623a77d7b4072b9df2f491ef4839c2c8e5305d04a54046715b79a791e8502cda94e2063bf01bb8c1113064c78269d2cd314f8bfe0e040215d'
+Eventino::Application.config.secret_key_base = '2d7b766f86801be623a77d7b4072b9df2f491ef4839c2c8e5305d04a54046715b79a791e8502cda94e2063bf01bb8c1113064c78269d2cd314f8bfe0e040215d'

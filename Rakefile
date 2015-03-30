@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LostAndFound::Application.load_tasks
+Eventino::Application.load_tasks

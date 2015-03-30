@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  college: MyString
+  event_title: MyText
+  event_type: MyText
+
+two:
+  name: MyString
+  college: MyString
+  event_title: MyText
+  event_type: MyText

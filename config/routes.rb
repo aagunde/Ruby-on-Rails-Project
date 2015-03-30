@@ -1,8 +1,12 @@
-LostAndFound::Application.routes.draw do
-  get "home/index"
-  resources :founditems
+Eventino::Application.routes.draw do
+  get 'help'    => 'home#help'
+  get 'about'   => 'home#about'
+  get 'contact' => 'home#contact'
+  get 'signup'  => 'users#new'
+  resources :users
+  resources :participants
 
-  resources :lostitems
+  resources :organisers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

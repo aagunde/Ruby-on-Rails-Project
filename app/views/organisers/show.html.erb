@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @organiser.name %>
+</p>
+
+<p>
+  <strong>College:</strong>
+  <%= @organiser.college %>
+</p>
+
+<p>
+  <strong>Event Title:</strong>
+  <%= @organiser.event_title %>
+</p>
+
+<p>
+  <strong>Event Type:</strong>
+  <%= @organiser.event_type %>
+</p>
+
+<%= link_to 'Edit', edit_organiser_path(@organiser) %> |
+<%= link_to 'Back', organisers_path %>

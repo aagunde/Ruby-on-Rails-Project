@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'bcrypt-ruby', '3.0.0'
+gem 'bcrypt', '3.1.7'
+gem 'bootstrap-sass', '3.2.0.0'
 gem "sqlite3", group: [:development, :test]
 
 # Use SCSS for stylesheets
@@ -43,3 +46,4 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'pg',group: :production
 gem 'rails_12factor', group: :production
+gem 'puma', group: :production

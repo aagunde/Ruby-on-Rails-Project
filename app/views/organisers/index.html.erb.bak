@@ -1,0 +1,49 @@
+<style>
+h1{
+
+text-align:center;
+}
+
+body{
+
+background-image:url("lost-and-found123.herokuapp/2.jpg");
+
+}
+
+
+</style>
+<h1>List of Organisers</h1>
+
+<table border="1" style="width:100%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>College</th>
+      <th>Event Title</th>
+      <th>Event Type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @organisers.each do |organiser| %>
+      <tr>
+        <td><%= organiser.name %></td>
+        <td><%= organiser.college %></td>
+        <td><%= organiser.event_title %></td>
+        <td><%= organiser.event_type %></td>
+        <td><%= link_to 'Show', organiser %></td>
+        <td><%= link_to 'Edit', edit_organiser_path(organiser) %></td>
+        <td><%= link_to 'Destroy', organiser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Organiser', new_organiser_path %>
+<br>
+<%= link_to 'Back', root_path %>
