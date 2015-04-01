@@ -1,8 +1,13 @@
 Eventino::Application.routes.draw do
+  get "sessions/new"
   get 'help'    => 'home#help'
   get 'about'   => 'home#about'
   get 'contact' => 'home#contact'
   get 'signup'  => 'users#new'
+  get    'plogin'   => 'sessions#new'
+  post   'plogin'   => 'sessions#create'
+  delete 'plogout'  => 'sessions#destroy'
+
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
